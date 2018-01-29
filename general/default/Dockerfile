@@ -1,10 +1,10 @@
 FROM ubuntu:16.04
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get update
-RUN apt-get install -y apt-utils
-RUN apt-get -y upgrade
-RUN apt-get install -y build-essential
-RUN apt-get install -y git-all
-RUN apt-get install -y iputils-ping
-RUN apt-get install -y wget
-RUN apt-get install -y vim
+RUN apt-get update \
+&& apt-get install -y apt-utils \
+&& apt-get -y upgrade \
+&& apt-get install -y build-essential \
+&& apt-get install -y git-all \
+&& apt-get install -y iputils-ping \
+&& apt-get install -y wget \
+&& apt-get install -y vim
